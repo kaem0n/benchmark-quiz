@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Page - kaem0n's quiz</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <i class="fas fa-code red"></i>
+        <span>kaem0n's quiz</span>
+      </div>
+    </header>
+
+    <div id="clock">
+      <div id="circle">
+        <span id="timer-text"
+          >seconds <br />
+          <strong class="big"></strong> <br />
+          remaining</span
+        >
+      </div>
+    </div>
+
+    <main class="nopadding">
+      <div id="question-container">
+        <h2 id="category"></h2>
+        <h1 id="question"></h1>
+        <form id="question-form">
+          <!-- <div>
+            <button
+              onclick="selected(event)"
+              type="button"
+              class="answers correct"
+            >
+            </button>
+            <button onclick="selected(event)" type="button" class="answers">
+            </button>
+            <button onclick="selected(event)" type="button" class="answers">
+            </button>
+            <button onclick="selected(event)" type="button" class="answers">
+            </button>
+          </div>
+          <button id="special">CONFIRM</button> -->
+        </form>
+        <span id="tracker" class="semibold">
+          <!-- Question 1<span class="red">/10</span> -->
+        </span>
+      </div>
+
+      <div id="quiz-end" class="invisible">
+        <!-- <form action="./results.html">
+          <span class="bold">Congratulations! You reached the end!</span>
+          <button class="special">GO TO RESULTS</button>
+        </form> -->
+      </div>
+    </main>
+    <script src="./js/quiz.js"></script>
+  </body>
+</html>

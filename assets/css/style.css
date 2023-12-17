@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Saira:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+/* font-family: 'Outfit', sans-serif; */
+/* font-family: 'Saira', sans-serif; */
+
+/* GENERAL PROPERTIES */
+
+body {
+    height: 100vh;
+    font-family: 'Saira', sans-serif;
+    color: white;
+    background: linear-gradient(180deg, rgba(29,29,29,1) 86%, rgba(157,12,12,1) 88%, rgba(29,29,29,1) 98%);
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.semibold {
+    font-weight: 600;
+}
+
+.big {
+    font-size: 2.3rem;
+}
+
+.red, a {
+    color: rgba(157,12,12,1);
+}
+
+.nopadding {
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 60px;
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: disc;
+    margin: 10px 0 10px 30px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+p {
+    margin: 10px 0 10px 0;
+}
+
+header {
+    padding: 40px 0 40px 100px;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+#logo span {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+#logo i {
+    font-size: 40px;
+    margin-right: 10px;
+}
+
+main {
+    padding-left: 100px;
+}
+
+/* WELCOME PAGE PROPERTIES */
+
+#main-form {
+    margin-top: 30px;
+}
+
+#main-form button {
+    font-family: "Outfit", sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+    background-color: rgb(114, 9, 9);
+    color: rgba(29,29,29,1);
+    padding: 0px;
+    height: 55px;
+    width: 180px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.5s ease 0s, box-shadow 0.5s ease 0s;
+    border-radius: 1px;
+    margin-left: 230px;
+}
+
+#main-form button:hover {
+    transition: 300ms;
+    box-shadow: 0.5px 1px 7px 7px rgb(114, 9, 9);
+    background-color: rgba(157,12,12,1);
+}
+
+input[type="text"], input[type="number"] {
+    all: unset;
+    font-family: inherit;
+    color: rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(157,12,12,1);
+    padding-left: 10px;
+    margin: 5px 0 5px 0;
+}
+
+input[type="text"] {
+    display: block;
+    width: 300px;
+}
+
+input[type="number"] {
+    width: 30px;
+    margin-left: 5px;
+    cursor: text;
+}
+
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+    display: none;
+}
+
+#inputnumber-label {
+    padding: 0;
+}
+
+label {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+}
+  
+.radio {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+  
+.newradio {
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    left: 6px;
+    height: 10px;
+    width: 10px;
+    background-color: rgba(29,29,29,1);
+    border: 2px solid white;
+    border-radius: 50%;
+}
+  
+.newradio:hover {
+    background-color: rgb(46,46,46);
+}
+  
+.radio:checked ~ .newradio {
+    background-color: rgb(46,46,46);
+}
+  
+.newradio::after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+.radio:checked ~ .newradio::after {
+    display: block;
+}
+  
+label .newradio::after {
+    top: 3px;
+    left: 3px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: white;
+}
+  
+#checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+  
+#checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 1;
+    width: 1;
+    top: 2px;
+    left: 2px;
+}
+  
+#newcheckbox {
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    left: 6px;
+    height: 10px;
+    width: 10px;
+    background-color: rgba(29,29,29,1);
+    border: 2px solid white;
+}
+  
+#newcheckbox:hover {
+    background-color: rgb(46,46,46);
+}
+  
+#checkbox:checked ~ #newcheckbox {
+    background-color: rgb(46,46,46);
+}
+  
+#newcheckbox::after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+#checkbox:checked ~ #newcheckbox::after {
+    display: block;
+}
+  
+label #newcheckbox::after {
+    left: 2px;
+    top: -2px;
+    width: 5px;
+    height: 9px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* QUIZ PROPERTIES */
+
+#clock {
+    position: sticky;
+    top: 60px;
+    margin-left: auto;
+    margin-right: 60px;
+    background: conic-gradient(rgba(157,12,12,1) 100%, rgba(255, 255, 255, 0.3) 0);
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#circle {
+    display: inline-block;
+    background-color: rgba(29,29,29,1);
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+#circle span {
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    font-size: 0.5em;
+}
+
+#question-container, #quiz-end {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 65vw;
+    margin: 0 auto;
+}
+
+#question-container h1 {
+    margin-bottom: 40px;
+}
+
+#question-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#question-form div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 510px;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.answers {
+    font-family: inherit;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.164);
+    color: white;
+    margin-bottom: 10px;
+    width: 240px;
+    height: 50px;
+    border-radius: 30px;
+    border: 2px solid rgba(255, 255, 255, 0.05);
+    cursor: pointer;
+    box-shadow: inset 0px -7px 15px 3px rgba(0,0,0,0.3);
+}
+
+.answers:hover, .clicked {
+    background-color: rgba(157,12,12,1);
+    border: 2px solid rgba(109,109,109, 0.5);
+    box-shadow: inset 0px -7px 15px 3px rgba(0,0,0,0.3);
+}
+
+.special {
+    font-family: "Outfit", sans-serif;
+    font-weight: 700;
+    background-color: rgb(114, 9, 9);
+    color: rgba(29,29,29,1);
+    padding: 0px;
+    height: 40px;
+    width: 160px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.5s ease 0s, box-shadow 0.5s ease 0s;
+    border-radius: 1px;
+}
+
+.special:hover {
+    transition: 300ms;
+    box-shadow: 0.5px 1px 7px 7px rgb(114, 9, 9);
+    background-color: rgba(157,12,12,1);
+}
+
+#question-container span {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+#quiz-end span {
+    display: block;
+    font-family: 'Outfit', sans-serif;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+.invisible { /* JS Class */
+    display: none !important;
+}

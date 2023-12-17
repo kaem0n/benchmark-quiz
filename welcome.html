@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome Page - kaem0n's quiz</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <i class="fas fa-code red"></i>
+        <span>kaem0n's quiz</span>
+      </div>
+    </header>
+    <main>
+      <h1>Welcome to <br /><strong class="bold">your exam</strong></h1>
+      <h2 class="bold red">Instructions</h2>
+      <p>
+        This project is part of a challenge and is personal and derivative from
+        <a href="https://github.com/kaem0n/epicode-BW1-Team4">this one</a>.
+      </p>
+      <ul>
+        <li>
+          Each question is <strong class="semibold">timed</strong> and can only
+          be answered <strong class="semibold">once</strong>.
+        </li>
+        <li>
+          Each difficulty has a different set of questions. The number of
+          questions is specified by the user.
+        </li>
+        <li>
+          This exam can take from <strong class="semibold">5 to 30 min.</strong>
+        </li>
+      </ul>
+      <form id="main-form">
+        <input
+          id="name"
+          placeholder="Write your name"
+          maxlength="30"
+          minlength="3"
+          type="text"
+          required
+        />
+        <label for="questions-number" id="inputnumber-label"
+          >Set the number of questions (min. 10 - max. 50):
+          <input
+            type="number"
+            id="questions-number"
+            min="10"
+            max="50"
+            maxlength="2"
+            value="10"
+        /></label>
+        <p>Set the difficulty:</p>
+        <ol>
+          <li>
+            <label for="easy"
+              ><strong class="semibold">EASY</strong>: 10pts for every correct
+              answer - min. 50% needed to pass<input
+                class="radio"
+                type="radio"
+                id="easy"
+                name="difficulty" />
+              <span class="newradio"></span
+            ></label>
+          </li>
+          <li>
+            <label for="medium"
+              ><strong class="semibold">MEDIUM</strong>: 15pts for every correct
+              answer - min. 60% needed to pass
+              <input
+                class="radio"
+                type="radio"
+                id="medium"
+                name="difficulty"
+                checked />
+              <span class="newradio"></span
+            ></label>
+          </li>
+          <li>
+            <label for="hard"
+              ><strong class="semibold">HARD</strong>: 20pts for every correct
+              answer - min. 70% needed to pass<input
+                class="radio"
+                type="radio"
+                id="hard"
+                name="difficulty" /><span class="newradio"></span
+            ></label>
+          </li>
+        </ol>
+        <div id="checkbox-container">
+          <label for="checkbox"
+            ><strong class="semibold"
+              >This is a useless checkbox, just press it. Because yes. </strong
+            ><input
+              type="checkbox"
+              id="checkbox"
+              name="checkbox"
+              required
+            /><span id="newcheckbox"></span>
+          </label>
+          <button>PROCEED</button>
+        </div>
+      </form>
+    </main>
+    <script src="./js/welcome.js"></script>
+  </body>
+</html>

@@ -1,0 +1,115 @@
+/* Importa i font da Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Outfit:wght@400;700&display=swap");
+
+body,
+div,
+h1,
+h2,
+form {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+body {
+  font-family: "Inter", Arial, sans-serif;
+  background-image: url("../images/bg.jpg");
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding: 40px 100px;
+}
+
+header img {
+  height: 40px;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+#container {
+  margin: 0 auto;
+  width: 495px;
+}
+h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  margin-bottom: 23px;
+}
+
+h2 {
+  font-family: "Outfit", sans-serif;
+  font-size: 1.4em;
+  margin-bottom: 30px;
+}
+
+/* Stile delle stelle nel div */
+div img {
+  width: 30px;
+  margin-bottom: 50px;
+  margin-left: 5px;
+  opacity: 0.1;
+  transition: opacity 0s;
+}
+
+/* Stelle al passaggio del mouse */
+div img:hover {
+  opacity: 1;
+}
+
+/* Stile delle immagini quando sono attive (cliccate) */
+div img:active {
+  color: gray;
+  filter: brightness(1.5);
+}
+
+/* Stile delle immagini quando sono attive o al passaggio del mouse */
+div img.active,
+div img.hover {
+  opacity: 1;
+}
+
+/* Stile dell'elemento h2 nel div */
+div h2 {
+  font-family: "Outfit", sans-serif;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+/* Stile dell'input nel form */
+form input {
+  width: 480px;
+  padding: 10px 0 10px 10px;
+  margin-bottom: 10px;
+  color: rgb(239, 234, 234);
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #d20094;
+}
+
+/* Stile del pulsante nel form */
+form button {
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  font-size: 1.2em;
+  margin-top: 30px;
+  background-color: #0fe5de;
+  color: rgba(30, 9, 114, 0.868);
+  padding: 0px;
+  height: 55px;
+  width: 180px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 1s, box-shadow 1s;
+  box-shadow: 0.5px 1px 7px 7px rgba(24, 183, 197, 0.428);
+  border-radius: 1px;
+}

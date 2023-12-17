@@ -1,0 +1,11 @@
+1. scegliere nuovo pattern di colori e in generale un'estetica più personale
+2. implementare un sistema di difficoltà più avanzato:
+	- numero di domande dinamico scelto dall'utente (stabilire un minimo e un massimo)
+	- livello di difficoltà con pool di domande personalizzato per ogni livello
+	- timer tarato sulla domanda e non sulla difficoltà
+	- assegnazione di un punteggio basato sulla difficoltà selezionata per ogni risposta giusta
+3. implementare un timer serio (.svg? / chart.js?) e una torta degna di nota usando chart.js
+4. implementare una visualizzazione delle domande coerente con un progetto vero
+5. implementare una leaderboard che prende i dati dalla pagina iniziale e dallo svolgimento del quiz
+6. reset totale o parziale del quiz sulla pagina di feedback
+7. implementare falso caricamento della pagina con relative animazioni per la user experience
